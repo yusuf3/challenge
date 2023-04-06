@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  webserver:
+    build: .
+    image: challenge2
+    container_name: challenge2
+    restart: unless-stopped
+    ports:
+      - 8080:80
